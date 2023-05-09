@@ -1,0 +1,367 @@
+CRITICAL - 2023-04-06 22:18:10 --> Undefined variable $resultado
+in APPPATH\Views\registro.php on line 135.
+ 1 APPPATH\Views\registro.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultado', 'C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\registro.php', 135)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\registro.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('registro', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(17): view('registro')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->registro()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:18:56 --> Undefined variable $resultado
+in APPPATH\Views\registro.php on line 135.
+ 1 APPPATH\Views\registro.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultado', 'C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\registro.php', 135)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\registro.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('registro', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(17): view('registro')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->registro()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:19:39 --> Undefined variable $carrera
+in APPPATH\Views\usuarios.php on line 210.
+ 1 APPPATH\Views\usuarios.php(210): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carrera', 'C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\usuarios.php', 210)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(11): view('usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:25:27 --> Class "App\Controllers\CarreraModel" not found
+in APPPATH\Controllers\Usuarios.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:26:08 --> Class "App\Controllers\CarreraModel" not found
+in APPPATH\Controllers\Usuarios.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:26:09 --> Class "App\Controllers\CarreraModel" not found
+in APPPATH\Controllers\Usuarios.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:26:09 --> Class "App\Controllers\CarreraModel" not found
+in APPPATH\Controllers\Usuarios.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:26:10 --> Class "App\Controllers\CarreraModel" not found
+in APPPATH\Controllers\Usuarios.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:26:10 --> Class "App\Controllers\CarreraModel" not found
+in APPPATH\Controllers\Usuarios.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:26:11 --> Class "App\Controllers\CarreraModel" not found
+in APPPATH\Controllers\Usuarios.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:26:45 --> Class "App\Controllers\CarreraModel" not found
+in APPPATH\Controllers\Usuarios.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:26:45 --> Class "App\Controllers\CarreraModel" not found
+in APPPATH\Controllers\Usuarios.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:26:46 --> Class "App\Controllers\CarreraModel" not found
+in APPPATH\Controllers\Usuarios.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:26:46 --> Class "App\Controllers\CarreraModel" not found
+in APPPATH\Controllers\Usuarios.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:26:46 --> Class "App\Controllers\CarreraModel" not found
+in APPPATH\Controllers\Usuarios.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:28:27 --> Class "App\Controllers\CarreraModel" not found
+in APPPATH\Controllers\Usuarios.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:28:28 --> Class "App\Controllers\CarreraModel" not found
+in APPPATH\Controllers\Usuarios.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:28:28 --> Class "App\Controllers\CarreraModel" not found
+in APPPATH\Controllers\Usuarios.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:29:10 --> Undefined variable $carrera
+in APPPATH\Views\usuarios.php on line 210.
+ 1 APPPATH\Views\usuarios.php(210): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carrera', 'C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\usuarios.php', 210)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(10): view('usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:29:25 --> Undefined variable $carrera
+in APPPATH\Views\usuarios.php on line 210.
+ 1 APPPATH\Views\usuarios.php(210): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carrera', 'C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\usuarios.php', 210)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(10): view('usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:29:27 --> Undefined variable $carrera
+in APPPATH\Views\usuarios.php on line 210.
+ 1 APPPATH\Views\usuarios.php(210): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carrera', 'C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\usuarios.php', 210)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(10): view('usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:29:28 --> Undefined variable $carrera
+in APPPATH\Views\usuarios.php on line 210.
+ 1 APPPATH\Views\usuarios.php(210): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carrera', 'C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\usuarios.php', 210)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(10): view('usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:31:32 --> Undefined variable $usuarios
+in APPPATH\Views\usuarios.php on line 130.
+ 1 APPPATH\Views\usuarios.php(130): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\usuarios.php', 130)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(10): view('usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:34:12 --> Class "App\Controllers\CarreraModel" not found
+in APPPATH\Controllers\Usuarios.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:34:36 --> Undefined variable $user_carrera
+in APPPATH\Controllers\Usuarios.php on line 12.
+ 1 APPPATH\Controllers\Usuarios.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_carrera', 'C:\\xampp\\htdocs\\proyecto-lap\\app\\Controllers\\Usuarios.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:35:38 --> Undefined variable $carrera
+in APPPATH\Views\usuarios.php on line 212.
+ 1 APPPATH\Views\usuarios.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carrera', 'C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\usuarios.php', 212)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [...], true)
+ 5 APPPATH\Controllers\Usuarios.php(13): view('usuarios', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:36:07 --> Undefined variable $carrera
+in APPPATH\Views\usuarios.php on line 212.
+ 1 APPPATH\Views\usuarios.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carrera', 'C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\usuarios.php', 212)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [...], true)
+ 5 APPPATH\Controllers\Usuarios.php(13): view('usuarios', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:36:07 --> Undefined variable $carrera
+in APPPATH\Views\usuarios.php on line 212.
+ 1 APPPATH\Views\usuarios.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carrera', 'C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\usuarios.php', 212)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [...], true)
+ 5 APPPATH\Controllers\Usuarios.php(13): view('usuarios', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:38:04 --> Undefined variable $carrera
+in APPPATH\Views\usuarios.php on line 212.
+ 1 APPPATH\Views\usuarios.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carrera', 'C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\usuarios.php', 212)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [...], true)
+ 5 APPPATH\Controllers\Usuarios.php(13): view('usuarios', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:38:05 --> Undefined variable $carrera
+in APPPATH\Views\usuarios.php on line 212.
+ 1 APPPATH\Views\usuarios.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carrera', 'C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\usuarios.php', 212)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [...], true)
+ 5 APPPATH\Controllers\Usuarios.php(13): view('usuarios', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:40:55 --> Undefined variable $usuario
+in APPPATH\Views\usuarios.php on line 185.
+ 1 APPPATH\Views\usuarios.php(185): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\usuarios.php', 185)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(13): view('usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:40:56 --> Undefined variable $usuario
+in APPPATH\Views\usuarios.php on line 185.
+ 1 APPPATH\Views\usuarios.php(185): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\usuarios.php', 185)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(13): view('usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:40:57 --> Undefined variable $usuario
+in APPPATH\Views\usuarios.php on line 185.
+ 1 APPPATH\Views\usuarios.php(185): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\usuarios.php', 185)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(13): view('usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:41:22 --> Undefined variable $usuarios
+in APPPATH\Views\usuarios.php on line 188.
+ 1 APPPATH\Views\usuarios.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\usuarios.php', 188)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(13): view('usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-06 22:41:23 --> Undefined variable $usuarios
+in APPPATH\Views\usuarios.php on line 188.
+ 1 APPPATH\Views\usuarios.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\usuarios.php', 188)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\proyecto-lap\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(13): view('usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-06 23:11:23 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`proyecto_laboratorios`.`usuario`, CONSTRAINT `id_carrera` FOREIGN KEY (`id_carrera`) REFERENCES `carrera` (`id_carrera`)) in C:\xampp\htdocs\proyecto-lap\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto-lap\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario...', 0)
+#1 C:\xampp\htdocs\proyecto-lap\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 C:\xampp\htdocs\proyecto-lap\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 C:\xampp\htdocs\proyecto-lap\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 C:\xampp\htdocs\proyecto-lap\vendor\codeigniter4\framework\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\proyecto-lap\vendor\codeigniter4\framework\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\proyecto-lap\vendor\codeigniter4\framework\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\proyecto-lap\app\Controllers\Usuarios.php(55): CodeIgniter\Model->update('45', Array)
+#8 C:\xampp\htdocs\proyecto-lap\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Usuarios->editar('45')
+#9 C:\xampp\htdocs\proyecto-lap\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#10 C:\xampp\htdocs\proyecto-lap\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto-lap\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-04-06 23:11:24 --> Cannot add or update a child row: a foreign key constraint fails (`proyecto_laboratorios`.`usuario`, CONSTRAINT `id_carrera` FOREIGN KEY (`id_carrera`) REFERENCES `carrera` (`id_carrera`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario` SET `matricula` = \'201907831\', `nombre` = \'Diego Angel\', `apellidos` = \'San Martin Gomez\', `correo` = \'diego.sanmarting@alumno.buap.mx\', `telefono` = \'2221076105\', `nss` = \'9999999\', `id_carrera` = NULL, `rol` = NULL
+WHERE `usuario`.`id_usuario` IN (\'45\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario` SET `matricula` = \'201907831\', `nombre` = \'Diego Angel\', `apellidos` = \'San Martin Gomez\', `correo` = \'diego.sanmarting@alumno.buap.mx\', `telefono` = \'2221076105\', `nss` = \'9999999\', `id_carrera` = NULL, `rol` = NULL
+WHERE `usuario`.`id_usuario` IN (\'45\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario` SET `matricula` = \'201907831\', `nombre` = \'Diego Angel\', `apellidos` = \'San Martin Gomez\', `correo` = \'diego.sanmarting@alumno.buap.mx\', `telefono` = \'2221076105\', `nss` = \'9999999\', `id_carrera` = NULL, `rol` = NULL
+WHERE `usuario`.`id_usuario` IN (\'45\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario` SET `matricula` = :matricula:, `nombre` = :nombre:, `apellidos` = :apellidos:, `correo` = :correo:, `telefono` = :telefono:, `nss` = :nss:, `id_carrera` = :id_carrera:, `rol` = :rol:
+WHERE `usuario`.`id_usuario` IN :usuario.id_usuario:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Usuarios.php(55): CodeIgniter\Model->update('45', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editar('45')
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-06 23:11:58 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`proyecto_laboratorios`.`usuario`, CONSTRAINT `id_carrera` FOREIGN KEY (`id_carrera`) REFERENCES `carrera` (`id_carrera`)) in C:\xampp\htdocs\proyecto-lap\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto-lap\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario...', 0)
+#1 C:\xampp\htdocs\proyecto-lap\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 C:\xampp\htdocs\proyecto-lap\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 C:\xampp\htdocs\proyecto-lap\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 C:\xampp\htdocs\proyecto-lap\vendor\codeigniter4\framework\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\proyecto-lap\vendor\codeigniter4\framework\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\proyecto-lap\vendor\codeigniter4\framework\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\proyecto-lap\app\Controllers\Usuarios.php(55): CodeIgniter\Model->update('45', Array)
+#8 C:\xampp\htdocs\proyecto-lap\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Usuarios->editar('45')
+#9 C:\xampp\htdocs\proyecto-lap\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#10 C:\xampp\htdocs\proyecto-lap\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto-lap\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-04-06 23:11:58 --> Cannot add or update a child row: a foreign key constraint fails (`proyecto_laboratorios`.`usuario`, CONSTRAINT `id_carrera` FOREIGN KEY (`id_carrera`) REFERENCES `carrera` (`id_carrera`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario` SET `matricula` = \'201907831\', `nombre` = \'Diego Angel\', `apellidos` = \'San Martin Gomez\', `correo` = \'diego.sanmarting@alumno.buap.mx\', `telefono` = \'2221076105\', `nss` = \'9999999\', `id_carrera` = NULL, `rol` = NULL
+WHERE `usuario`.`id_usuario` IN (\'45\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario` SET `matricula` = \'201907831\', `nombre` = \'Diego Angel\', `apellidos` = \'San Martin Gomez\', `correo` = \'diego.sanmarting@alumno.buap.mx\', `telefono` = \'2221076105\', `nss` = \'9999999\', `id_carrera` = NULL, `rol` = NULL
+WHERE `usuario`.`id_usuario` IN (\'45\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario` SET `matricula` = \'201907831\', `nombre` = \'Diego Angel\', `apellidos` = \'San Martin Gomez\', `correo` = \'diego.sanmarting@alumno.buap.mx\', `telefono` = \'2221076105\', `nss` = \'9999999\', `id_carrera` = NULL, `rol` = NULL
+WHERE `usuario`.`id_usuario` IN (\'45\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario` SET `matricula` = :matricula:, `nombre` = :nombre:, `apellidos` = :apellidos:, `correo` = :correo:, `telefono` = :telefono:, `nss` = :nss:, `id_carrera` = :id_carrera:, `rol` = :rol:
+WHERE `usuario`.`id_usuario` IN :usuario.id_usuario:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Usuarios.php(55): CodeIgniter\Model->update('45', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editar('45')
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
