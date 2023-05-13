@@ -146,9 +146,11 @@ if($user->get('nombre_usuario') != "" ):
             </select>
         </div><br>
         <div class="form-group">
-            <label class="col-sm-5 col-form-label " for="inputPassword3" >Equipo (opcional)</label>
+            <!-- <label class="col-sm-5 col-form-label " for="inputPassword3" >Equipo (opcional)</label>
             <select class="form-control selct2" type="number" name="presIdEquipo" >
-            <option value=0>Ninguno</option>
+            <option value=0>Ninguno</option> -->
+            <label class="col-sm-5 col-form-label " for="inputPassword3" >Equipo</label>
+            <select class="form-control selct2" type="number" name="presIdEquipo" >
                 <?php foreach ($equipo as $equipos){
                 echo '<option value="'.$equipos['id_equipo'].'">'.$equipos['nombre_equipo'].'</option>';}; ?>
             </select>
@@ -156,7 +158,7 @@ if($user->get('nombre_usuario') != "" ):
         
         <input type="submit" class="btn btn-success btn-lg" value="Registrar">
         <?php
-            if($user->get('rol') == 2 || $user->get('rol')==1){
+            if($user->get('rol') == 0 || $user->get('rol')==1){
                 echo '<a href="'. base_url("prestamos").'" class="btn btn-warning text-light text-bold btn-lg">Atras</a>';
             }else{
                 if($user->get('rol') == 2||$user->get('rol') == 3){

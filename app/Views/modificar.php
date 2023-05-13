@@ -28,7 +28,7 @@
             </div>
             <div class="form-floating">
                 <label class="col-sm-5  col-form-label">Nss</label>
-                <input type="text" class="form-control form-control-user" id="EingNSS" name="EingNSS"  value="<?php echo $usuarios['nss_usuario'];?>" required>
+                <input type="text" class="form-control form-control-user" id="EingNSS" name="EingNSS"  value="<?php echo $usuarios['nss_usuario'];?>">
             </div>
             <div class="form-group">
                 <label class="col-sm-5 col-form-label " for="inputPassword3" >Carrera</label>

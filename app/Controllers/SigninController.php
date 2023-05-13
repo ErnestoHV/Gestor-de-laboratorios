@@ -22,7 +22,7 @@ class SigninController extends Controller{
         
         if($data){
             $pass = $data['password_usuario'];
-            if($password == $pass){
+            if(password_verify($password, $pass)){
                 $ses_data = [
                     'id_usuario' => $data['id_usuario'],
                     'matricula' => $data['matricula'],

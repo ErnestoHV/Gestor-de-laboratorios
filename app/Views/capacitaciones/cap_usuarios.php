@@ -114,14 +114,14 @@ if($user->get('nombre_usuario') != "" && $user->get('rol')==0 || $user->get('rol
                             <ul>
                             <?php if($user->get('rol')==0){ 
                                echo '<li><a href="usuarios">Usuarios</a></li>';
-                               echo '<li><a href="registro_admin">Registro</a></li>';
+                               echo '<li><a href="registro_admin">Registro de usuarios</a></li>';
                                echo '<li><a href="laboratorios">Laboratorios</a></li>';
                                echo '<li><a href="equipos">Equipos</a></li>';
                                echo '<li><a href="prestamos">Préstamos</a></li>';
                                echo '<li><a href="capacitacion">Capacitación</a></li>'; 
                             }else{
                                 if($user->get('rol')==1){
-                                    echo '<li><a href="registro_admin">Registro</a></li>';
+                                    echo '<li><a href="registro_admin">Registro de usuarios</a></li>';
                                     echo '<li><a href="laboratorios">Laboratorios</a></li>';
                                     echo '<li><a href="equipos">Equipos</a></li>';
                                     echo '<li><a href="prestamos">Préstamos</a></li>';
@@ -177,7 +177,6 @@ if($user->get('nombre_usuario') != "" && $user->get('rol')==0 || $user->get('rol
                     <div class="float-right">
                         <div class="dropdown dib">
                             <div class="header-icon" data-toggle="dropdown">
-                                <i class="ti-bell"></i>
                                 <div class="drop-down dropdown-menu dropdown-menu-right">
                                     
                                             </li>
@@ -251,7 +250,7 @@ if($user->get('nombre_usuario') != "" && $user->get('rol')==0 || $user->get('rol
        <td><?= $usuarios_capacitaciones['id_usuario'].". ".$generales->nombre_usuario." ".$generales->apellidos_usuario; ?></td>
        <td><?= $usuarios_capacitaciones['id_capacitacion'].". ".$generales->nombre_capacitacion; ?></td>
        <td><a href="<?php echo base_url('modificar_cap_usuarios');?>"data-toggle="modal" data-target="#modalEditarCap_usuarios<?php echo $usuarios_capacitaciones['id_usuario_capacitacion'];?>"><i class="fa-solid fa-pencil" style="color: #1a8fc1;"></i></a></td>
-       <td><a href="<?= base_url('Cap_usuariosModel/eliminar/'.$usuarios_capacitaciones['id_usuario_capacitacion'])?>"><i class="fa-solid fa-trash-can" style="color: #db0000;"></i></a></td>
+       <td><a href="<?= base_url('Cap_usuariosModel/eliminar/'.$usuarios_capacitaciones['id_usuario_capacitacion'])?>" onclick="return confirm('¿Está seguro que desea borrar este registro?')"><i class="fa-solid fa-trash-can" style="color: #db0000;"></i></a></td>
      </tr>
      <?php include('modificar_cap_usuarios.php')?>
      <?php endif; ?>

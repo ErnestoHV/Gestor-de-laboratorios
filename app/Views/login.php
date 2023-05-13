@@ -73,10 +73,12 @@
       <div class="container-fluid">
         <div class="navbar-header">
             <header>
-        <div style= "height: 100px; width: 100px">
-            <img src="../img/Escudo_BUAP_Negativo.png" width="100%" length="100%" >
+        <div style= "height: 85px; width: 85px; text-align: center;">
+            <img src="../img/Escudo_BUAP_Negativo.png"  width="100%" length="100%" >
         </div>
-        <h1 style="color:white; margin-left:15px; font-weight:bolder;">BUAP</h1>
+        <div style="text-align: center;">
+            <h1 style="color:white; font-weight:bolder;">BUAP</h1>
+        </div>
       </header>
         </div>
         
@@ -106,7 +108,7 @@
                 </div>
                 <div class="form-group">
                 <label for="username">Ingresa tu matrícula/ID</label>
-                    <input type="text" name="username" id="username" class="form-control" required>
+                    <input type="text" name="username" id="username" class="form-control" placeholder="Matrícula de alumno/ID de trabajador" required>
                     
                 </div>
                 <div class="form-group">
@@ -127,7 +129,7 @@
                     </div>
                 </div>
             </form>
-            <p>No tienes cuenta? <a href="registro">Registrate aquí</a></p>
+            <p>No tienes cuenta? <a href="registro" style="font-weight:bolder; color:blue;">Registrate aquí</a></p>
         </div>
 
 

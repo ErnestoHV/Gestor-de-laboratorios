@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 05-05-2023 a las 21:05:39
+-- Tiempo de generación: 11-05-2023 a las 06:55:18
 -- Versión del servidor: 10.4.27-MariaDB
 -- Versión de PHP: 8.2.0
 
@@ -118,8 +118,8 @@ CREATE TABLE `equipo_capacitacion` (
 
 INSERT INTO `equipo_capacitacion` (`id_equipo_capacitacion`, `id_equipo`, `id_capacitacion`) VALUES
 (1, 2, 1),
-(5, 2, 7),
-(2, 3, 2);
+(2, 2, 7),
+(3, 3, 2);
 
 -- --------------------------------------------------------
 
@@ -168,11 +168,13 @@ CREATE TABLE `prestamo` (
 --
 
 INSERT INTO `prestamo` (`id_prestamo`, `fecha_prestamo`, `hora_fin_prestamo`, `observacion_prestamo`, `id_laboratorio`, `id_equipo`, `id_usuario`) VALUES
-(23, '2023-04-29 04:55:44', '10:50:00', '1', 3, 4, 2),
-(24, '2023-04-29 04:56:08', '11:30:00', '2', 2, 2, 3),
-(27, '2023-04-29 04:56:54', '10:40:00', '4', 1, 3, 2),
-(28, '2023-04-29 05:04:51', '07:02:00', '4', 1, 2, 6),
-(45, '2023-05-05 04:41:27', '05:00:00', '5', 1, 3, 6);
+(1, '2023-04-29 04:55:44', '10:50:00', '1', 3, 4, 1),
+(2, '2023-04-29 04:56:08', '11:30:00', '2', 2, 2, 2),
+(3, '2023-04-29 04:56:54', '10:40:00', '4', 1, 3, 1),
+(4, '2023-04-29 05:04:51', '07:02:00', '4', 1, 2, 5),
+(5, '2023-05-05 04:41:27', '05:00:00', '5', 1, 3, 5),
+(6, '2023-05-05 20:00:46', '10:13:00', 'Ninguna', 4, 5, 1),
+(7, '2023-05-09 04:48:08', '13:00:00', 'Dañado', 1, 2, 5);
 
 -- --------------------------------------------------------
 
@@ -187,7 +189,7 @@ CREATE TABLE `usuario` (
   `apellidos_usuario` varchar(30) NOT NULL,
   `correo_usuario` varchar(45) NOT NULL,
   `telefono_usuario` varchar(10) NOT NULL,
-  `password_usuario` varchar(20) NOT NULL,
+  `password_usuario` varchar(60) NOT NULL,
   `nss_usuario` varchar(12) NOT NULL,
   `id_carrera` int(11) NOT NULL,
   `rol` enum('0','1','2','3') NOT NULL
@@ -198,12 +200,14 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`id_usuario`, `matricula`, `nombre_usuario`, `apellidos_usuario`, `correo_usuario`, `telefono_usuario`, `password_usuario`, `nss_usuario`, `id_carrera`, `rol`) VALUES
-(2, '202267533', 'Diego Angel', 'San Martín Gómez', 'diego.sanmarting@alumno.buap.mx', '2212535186', '1234', '9489561', 1, '0'),
-(3, '202223895', 'Ernesto', 'Hernández Velázquez', 'ernesto@ernesto', '2221356846', '1234', '99984163', 1, '1'),
-(4, '202244929', 'Diana Sandra', 'Morales García', 'diana@diana', '2221356456', '1234', '99987863', 1, '3'),
-(5, '202224664', 'Ernesto', 'Arroyo Reyes', 'ernestoA@ernestoA', '222135786', '1234', '99984743', 1, '3'),
-(6, '202253071', 'María Zacil', 'Sánchez Juárez', 'Zacil@zacil', '221595644', '1234', '99987383', 1, '2'),
-(7, '202238868', 'David', 'Flores Jerónimo', 'david@david', '222139846', '1234', '99936163', 2, '2');
+(1, '202267533', 'Diego Angel', 'San Martín Gómez', 'diego.sanmarting@alumno.buap.mx', '2212535186', '$2y$10$3UkjMwW3alhq4zXe90ypaeaJYPFlsHktmDzLe/lvNH8z.deKaOj1K', '9489561', 1, '0'),
+(2, '202223895', 'Ernesto', 'Hernández Velázquez', 'ernesto@ernesto', '2221356846', '1234', '99984163', 1, '1'),
+(3, '202244929', 'Diana Sandra', 'Morales García', 'diana@diana', '2221356456', '1234', '99987863', 1, '3'),
+(4, '202224664', 'Ernesto', 'Arroyo Reyes', 'ernestoA@ernestoA', '222135786', '1234', '99984743', 1, '3'),
+(5, '202253071', 'María Zacil', 'Sánchez Juárez', 'Zacil@zacil', '221595644', '1234', '99987383', 1, '2'),
+(6, '202238868', 'David', 'Flores Jerónimo', 'david@david', '222139846', '1234', '99936163', 2, '2'),
+(7, '202053651', 'Jose Javier ', 'Reyes Sánchez ', 'jose.jav.1903@gmail.com', '2214092676', '123456789zZ', '63170215394', 3, '3'),
+(8, '201907831', 'Diego', 'San Martin', 'diego.sanmartin@alumno.buap', '2221568798', '$2y$10$M/1I9RHTK92w9544FaIsBudTD3thuE/IMbLTongykintRokRlTOOy', '98765435', 1, '3');
 
 -- --------------------------------------------------------
 
@@ -224,9 +228,11 @@ CREATE TABLE `usuario_capacitacion` (
 --
 
 INSERT INTO `usuario_capacitacion` (`id_usuario_capacitacion`, `fecha_inicio_capacitacion`, `fecha_fin_capacitacion`, `id_usuario`, `id_capacitacion`) VALUES
-(1, '2023-04-12 00:26:55', '2023-04-12 02:25:43', 6, 10),
-(2, '2023-04-12 00:27:11', '2023-04-12 02:25:43', 3, 4),
-(4, '2023-05-05 03:56:25', '2023-05-31 10:59:00', 4, 7);
+(1, '2023-04-12 00:26:55', '2023-04-12 02:25:43', 5, 10),
+(2, '2023-04-12 00:27:11', '2023-04-12 02:25:43', 2, 4),
+(3, '2023-05-05 03:56:25', '2023-05-31 10:59:00', 3, 7),
+(4, '2023-05-05 20:01:07', '2023-05-26 00:00:00', 1, 7),
+(5, '2023-05-05 23:24:58', '2023-05-24 10:10:00', 5, 10);
 
 --
 -- Índices para tablas volcadas
@@ -316,7 +322,7 @@ ALTER TABLE `equipo`
 -- AUTO_INCREMENT de la tabla `equipo_capacitacion`
 --
 ALTER TABLE `equipo_capacitacion`
-  MODIFY `id_equipo_capacitacion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_equipo_capacitacion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `laboratorio`
@@ -328,7 +334,7 @@ ALTER TABLE `laboratorio`
 -- AUTO_INCREMENT de la tabla `prestamo`
 --
 ALTER TABLE `prestamo`
-  MODIFY `id_prestamo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
+  MODIFY `id_prestamo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de la tabla `usuario`
@@ -340,7 +346,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de la tabla `usuario_capacitacion`
 --
 ALTER TABLE `usuario_capacitacion`
-  MODIFY `id_usuario_capacitacion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_usuario_capacitacion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Restricciones para tablas volcadas

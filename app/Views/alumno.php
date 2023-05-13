@@ -152,7 +152,7 @@ if($user->get('rol')==2 || $user->get('rol')== 3):
                   <hr>
                   <div class="row">
                     <div class="col-sm-3">
-                      <h5 class="mb-0" style="font-weight:bold;">Matricula/ID</h5>
+                      <h5 class="mb-0" style="font-weight:bold;">Matrícula/ID</h5>
                     </div>
                     <div class="col-sm-9 text-secondary">
                     <h4>
@@ -163,7 +163,7 @@ if($user->get('rol')==2 || $user->get('rol')== 3):
                   <hr>
                   <div class="row">
                     <div class="col-sm-3">
-                      <h5 class="mb-0" style="font-weight:bold;">Correo electronico</h5>
+                      <h5 class="mb-0" style="font-weight:bold;">Correo electrónico</h5>
                     </div>
                     <div class="col-sm-9 text-secondary">
                     <h4>
@@ -174,7 +174,7 @@ if($user->get('rol')==2 || $user->get('rol')== 3):
                   <hr>
                   <div class="row">
                     <div class="col-sm-3">
-                      <h5 class="mb-0" style="font-weight:bold;">Celular</h5>
+                      <h5 class="mb-0" style="font-weight:bold;">Teléfono</h5>
                     </div>
                     <div class="col-sm-9 text-secondary">
                     <h4>
@@ -220,13 +220,18 @@ if($user->get('rol')==2 || $user->get('rol')== 3):
   </thead>
   <tbody>
     <?php $contador = 1;
-    foreach ($prestamo as $prestamos): ?>
+    foreach ($prestamo as $prestamos): 
+      if (is_null($prestamos->nombre_equipo)) {
+        echo 'El email del usuario es nulo';
+    }
+    
+    ?>
       <tr>
         <td><?= $contador?></td>
         <td><?= $prestamos  ->fecha_prestamo;?></td>
         <td><?= $prestamos  ->hora_fin_prestamo;?></td>
         <td><?= $prestamos  ->nombre_laboratorio;?></td>
-        <td><?= $prestamos  ->nombre_equipo;?></td>
+        <td><?= $prestamos  ->nombre_equipo ?? "N/A";?></td>
         <td><?= $prestamos  ->observacion_prestamo;?></td>
       </tr>
     <?php $contador = $contador+1;

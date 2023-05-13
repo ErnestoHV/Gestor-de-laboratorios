@@ -39,7 +39,8 @@ public function alta_usuario(){
     'apellidos_usuario' =>$this->request->getPost('ape'),
     'correo_usuario' =>$this->request->getPost('corr'),
     'telefono_usuario' =>$this->request->getPost('tel'),
-    'password_usuario' =>$this->request->getPost('pass'),
+    //ENCRIPTAR CONTRASEÑA
+    'password_usuario' => password_hash($this->request->getPost('pass'), PASSWORD_BCRYPT),
     'nss_usuario' =>$this->request->getPost('nss'),
     'id_carrera' =>$this->request->getPost('carrera'),
     'rol' =>$this->request->getPost('rol')
@@ -59,11 +60,11 @@ $nombre=$user->where('nombre_usuario',$datos['nombre_usuario'])->findAll();
     }
     $respuesta=$user->insert($datos);
     $session->setFlashdata('success', 'El usuario ha sido creado con éxito.');
-    if($session->get('rol') == 0 || $session->get('rol') == 1){
-        return redirect()->to(base_url('registro_admin'));
+    if($session->get('rol') == "" || $session->get('rol') == 2 || $session->get('rol') == 3 ){
+        return redirect()->to(base_url('login'));
     }else{
-        if($session->get('rol') == 2 || $session->get('rol') == 3 || $session->get('rol') == ""){
-            return redirect()->to(base_url('login'));
+        if( $session->get('rol') == 0 || $session->get('rol') == 1 ){
+            return redirect()->to(base_url('registro_admin'));
         }
     }
             

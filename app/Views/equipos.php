@@ -114,14 +114,14 @@ if($user->get('nombre_usuario') != "" && $user->get('rol')==0 || $user->get('rol
                             <ul>
                             <?php if($user->get('rol')==0){ 
                                echo '<li><a href="usuarios">Usuarios</a></li>';
-                               echo '<li><a href="registro_admin">Registro</a></li>';
+                               echo '<li><a href="registro_admin">Registro de usuarios</a></li>';
                                echo '<li><a href="laboratorios">Laboratorios</a></li>';
                                echo '<li><a href="equipos">Equipos</a></li>';
                                echo '<li><a href="prestamos">Préstamos</a></li>';
                                echo '<li><a href="capacitacion">Capacitación</a></li>'; 
                             }else{
                                 if($user->get('rol')==1){
-                                    echo '<li><a href="registro_admin">Registro</a></li>';
+                                    echo '<li><a href="registro_admin">Registro de usuarios</a></li>';
                                     echo '<li><a href="laboratorios">Laboratorios</a></li>';
                                     echo '<li><a href="equipos">Equipos</a></li>';
                                     echo '<li><a href="prestamos">Préstamos</a></li>';
@@ -177,7 +177,6 @@ if($user->get('nombre_usuario') != "" && $user->get('rol')==0 || $user->get('rol
                     <div class="float-right">
                         <div class="dropdown dib">
                             <div class="header-icon" data-toggle="dropdown">
-                                <i class="ti-bell"></i>
                                 <div class="drop-down dropdown-menu dropdown-menu-right">
                                     
                                             </li>
@@ -254,7 +253,7 @@ if($user->get('nombre_usuario') != "" && $user->get('rol')==0 || $user->get('rol
        <td><?= $equipos['riesgo_equipo']; ?></td>
        <td><?= $equipos['id_laboratorio'].". ".$labs->nombre_laboratorio; ?></td>
        <td><a href="<?php echo base_url('modificar');?>"data-toggle="modal" data-target="#modalEditarEquipo<?php echo $equipos['id_equipo'];?>"><i class="fa-solid fa-pencil" style="color: #1a8fc1;"></i></a></td>
-       <td><a href="<?= base_url('EquiposModel/eliminar/'.$equipos['id_equipo'])?>"><i class="fa-solid fa-trash-can" style="color: #db0000;"></i></a></td>
+       <td><a href="<?= base_url('EquiposModel/eliminar/'.$equipos['id_equipo'])?>" onclick="return confirm('¿Está seguro que desea borrar este equipo?')"><i class="fa-solid fa-trash-can" style="color: #db0000;"></i></a></td>
      </tr>
      <?php include('modificar_eq.php')?>
      <?php endif; ?>

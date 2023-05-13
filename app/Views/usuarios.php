@@ -111,14 +111,14 @@ if($user->get('nombre_usuario') != "" && $user->get('rol')==0):
                             <ul>
                             <?php if($user->get('rol')==0){ 
                                echo '<li><a href="usuarios">Usuarios</a></li>';
-                               echo '<li><a href="registro_admin">Registro</a></li>';
+                               echo '<li><a href="registro_admin">Registro de usuarios</a></li>';
                                echo '<li><a href="laboratorios">Laboratorios</a></li>';
                                echo '<li><a href="equipos">Equipos</a></li>';
                                echo '<li><a href="prestamos">Préstamos</a></li>';
                                echo '<li><a href="capacitacion">Capacitación</a></li>'; 
                             }else{
                                 if($user->get('rol')==1){
-                                    echo '<li><a href="registro_admin">Registro</a></li>';
+                                    echo '<li><a href="registro_admin">Registro de usuarios</a></li>';
                                     echo '<li><a href="laboratorios">Laboratorios</a></li>';
                                     echo '<li><a href="equipos">Equipos</a></li>';
                                     echo '<li><a href="prestamos">Préstamos</a></li>';
@@ -174,7 +174,6 @@ if($user->get('nombre_usuario') != "" && $user->get('rol')==0):
                     <div class="float-right">
                         <div class="dropdown dib">
                             <div class="header-icon" data-toggle="dropdown">
-                                <i class="ti-bell"></i>
                                 <div class="drop-down dropdown-menu dropdown-menu-right">
                                     
                                             </li>
@@ -252,7 +251,7 @@ if($user->get('nombre_usuario') != "" && $user->get('rol')==0):
        <td><?= $carreras->nombre_carrera ?></td>
        <td><?= $usuarios['rol']; ?></td>  
        <td><a href="<?php echo base_url('modificar');?>"data-toggle="modal" data-target="#modalEditarUsuario<?php echo $usuarios['id_usuario'];?>"><i class="fa-solid fa-pencil" style="color: #1a8fc1;"></i></a></td>
-       <td><a href="<?= base_url('UserModel/eliminar/'.$usuarios['id_usuario'])?>"><i class="fa-solid fa-trash-can" style="color: #db0000;"></i></a></td>
+       <td><a href="<?= base_url('UserModel/eliminar/'.$usuarios['id_usuario'])?>" onclick="return confirm('¿Está seguro que desea borrar este usuario?')"><i class="fa-solid fa-trash-can" style="color: #db0000;"></i></a></td>
      </tr>
      <?php include('modificar.php'); ?>
         

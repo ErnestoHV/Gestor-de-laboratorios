@@ -18,7 +18,7 @@
         
             <div class="form-floating">
             <label class="col-sm-5 col-form-label " for="inputPassword3" >Laboratorio</label>
-            <select class="form-control selct2" type="number" name="presIdLaboratorio" required>
+            <select class="form-control selct2" type="number" name="EpresIdLaboratorio" required>
                 <?php foreach ($laboratorio as $laboratorios){
                  echo '<option value="' . $laboratorios['id_laboratorio'] . '"';
                  if ($prestamos["id_laboratorio"] == $laboratorios["id_laboratorio"]) {
@@ -30,7 +30,7 @@
         </div><br>
         <div class="form-floating">
             <label class="col-sm-5 col-form-label " for="inputPassword3" >Usuario</label>
-            <select class="form-control selct2" type="number" name="presIdUsuario" required>
+            <select class="form-control selct2" type="number" name="EpresIdUsuario" required>
                 <?php foreach ($usuario as $usuarios){
                 echo '<option value="'.$usuarios['id_usuario'].'"';
                 if($prestamos['id_usuario'] == $usuarios['id_usuario']){
@@ -40,16 +40,16 @@
             </select>
         </div><br>
         <div class="form-floating">
-            <label class="col-sm-5 col-form-label " for="inputPassword3" >Equipo (opcional)</label>
-            <select class="form-control selct2" type="number" name="presIdEquipo" >
-            
+            <!-- <label class="col-sm-5 col-form-label " for="inputPassword3" >Equipo (opcional)</label> -->
+            <label class="col-sm-5 col-form-label " for="inputPassword3" >Equipo</label>
+            <select class="form-control selct2" type="number" name="EpresIdEquipo" >
                 <?php foreach ($equipo as $equipos){
                 echo '<option value="'.$equipos['id_equipo'].'"';
                 if($prestamos['id_equipo'] == $equipos['id_equipo']){
                   echo ' selected';
                 }
                 echo '>'.$equipos['nombre_equipo'].'</option>';}; ?>
-                <option value=null <?php if($equipos['id_equipo']==""){ echo ' selected';}?>></option>
+                <!-- <option value=null <?php if($equipos['id_equipo']==""){ echo ' selected';}?>></option> -->
             </select>
         </div><br>
           </div>

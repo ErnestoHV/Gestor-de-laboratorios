@@ -102,7 +102,7 @@
     <div class="login-box-body">
     <div class="form-group">
         <div class="form-group">
-            <label class="col-sm-5 col-form-label ">Matricula/ID</label>
+            <label class="col-sm-5 col-form-label ">Matrícula/ID</label>
             <input type="text" class="form form-control-user text-dark" id="mat" name="mat" required>
         </div>
         <div class="form-group">
@@ -122,7 +122,7 @@
             <input type="telefono" class="form form-control-user" name="tel" required>
         </div>
         <div class="form-group">
-            <label class="col-sm-5 col-form-label ">Numero de Seguridad Social (NSS)</label>
+            <label class="col-sm-5 col-form-label ">Número de Seguridad Social (NSS)</label>
             <input type="text" class="form form-control-user"  name="nss">
         </div><br>
        <div class="form-group">
