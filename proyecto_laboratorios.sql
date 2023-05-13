@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 11-05-2023 a las 06:55:18
+-- Tiempo de generación: 13-05-2023 a las 07:43:20
 -- Versión del servidor: 10.4.27-MariaDB
 -- Versión de PHP: 8.2.0
 
@@ -94,7 +94,7 @@ CREATE TABLE `equipo` (
 --
 
 INSERT INTO `equipo` (`id_equipo`, `nombre_equipo`, `marca_equipo`, `modelo_equipo`, `tipo_equipo`, `descripcion_equipo`, `riesgo_equipo`, `id_laboratorio`) VALUES
-(1, 'Computadora', 'Dell', 'DDR4', 'Equipo de computo', 'Equipo con monitor, pantalla y mouse.', 'Bajo', 4),
+(1, 'Computadora', 'Dell', 'DDR4', 'Equipo de computo', 'Equipo con monitor, pantalla y mouse.', 'Bajo', 1),
 (2, 'Cortadora laser', 'Sculpfun', 'S9', 'Maquina ed grabado', 'Cortadora laser de alta precisión', 'Alto', 1),
 (3, 'Pistola de soldadura', 'Brave', 'BVSLD-01', 'Soldadura', 'Pistola para soldar', 'Medio', 2),
 (4, 'Computadora', 'HP', 'HP-465', 'Equipo de computo', 'Computadora de escritorio, con 8 GB de RAM, 1 TB de disco duro y un procesador Intel i3 de 11° Gen.', 'Bajo', 4),
@@ -118,8 +118,8 @@ CREATE TABLE `equipo_capacitacion` (
 
 INSERT INTO `equipo_capacitacion` (`id_equipo_capacitacion`, `id_equipo`, `id_capacitacion`) VALUES
 (1, 2, 1),
-(2, 2, 7),
-(3, 3, 2);
+(2, 2, 5),
+(3, 3, 7);
 
 -- --------------------------------------------------------
 
@@ -155,7 +155,8 @@ INSERT INTO `laboratorio` (`id_laboratorio`, `nombre_laboratorio`, `ubicacion_la
 
 CREATE TABLE `prestamo` (
   `id_prestamo` int(11) NOT NULL,
-  `fecha_prestamo` timestamp NOT NULL DEFAULT current_timestamp(),
+  `fecha_prestamo` date NOT NULL,
+  `hora_inicio_prestamo` time NOT NULL,
   `hora_fin_prestamo` time NOT NULL,
   `observacion_prestamo` varchar(250) NOT NULL,
   `id_laboratorio` int(11) NOT NULL,
@@ -167,14 +168,8 @@ CREATE TABLE `prestamo` (
 -- Volcado de datos para la tabla `prestamo`
 --
 
-INSERT INTO `prestamo` (`id_prestamo`, `fecha_prestamo`, `hora_fin_prestamo`, `observacion_prestamo`, `id_laboratorio`, `id_equipo`, `id_usuario`) VALUES
-(1, '2023-04-29 04:55:44', '10:50:00', '1', 3, 4, 1),
-(2, '2023-04-29 04:56:08', '11:30:00', '2', 2, 2, 2),
-(3, '2023-04-29 04:56:54', '10:40:00', '4', 1, 3, 1),
-(4, '2023-04-29 05:04:51', '07:02:00', '4', 1, 2, 5),
-(5, '2023-05-05 04:41:27', '05:00:00', '5', 1, 3, 5),
-(6, '2023-05-05 20:00:46', '10:13:00', 'Ninguna', 4, 5, 1),
-(7, '2023-05-09 04:48:08', '13:00:00', 'Dañado', 1, 2, 5);
+INSERT INTO `prestamo` (`id_prestamo`, `fecha_prestamo`, `hora_inicio_prestamo`, `hora_fin_prestamo`, `observacion_prestamo`, `id_laboratorio`, `id_equipo`, `id_usuario`) VALUES
+(1, '2023-05-08', '08:00:00', '10:00:00', '', 1, 1, 8);
 
 -- --------------------------------------------------------
 
@@ -206,7 +201,6 @@ INSERT INTO `usuario` (`id_usuario`, `matricula`, `nombre_usuario`, `apellidos_u
 (4, '202224664', 'Ernesto', 'Arroyo Reyes', 'ernestoA@ernestoA', '222135786', '1234', '99984743', 1, '3'),
 (5, '202253071', 'María Zacil', 'Sánchez Juárez', 'Zacil@zacil', '221595644', '1234', '99987383', 1, '2'),
 (6, '202238868', 'David', 'Flores Jerónimo', 'david@david', '222139846', '1234', '99936163', 2, '2'),
-(7, '202053651', 'Jose Javier ', 'Reyes Sánchez ', 'jose.jav.1903@gmail.com', '2214092676', '123456789zZ', '63170215394', 3, '3'),
 (8, '201907831', 'Diego', 'San Martin', 'diego.sanmartin@alumno.buap', '2221568798', '$2y$10$M/1I9RHTK92w9544FaIsBudTD3thuE/IMbLTongykintRokRlTOOy', '98765435', 1, '3');
 
 -- --------------------------------------------------------
@@ -228,11 +222,10 @@ CREATE TABLE `usuario_capacitacion` (
 --
 
 INSERT INTO `usuario_capacitacion` (`id_usuario_capacitacion`, `fecha_inicio_capacitacion`, `fecha_fin_capacitacion`, `id_usuario`, `id_capacitacion`) VALUES
-(1, '2023-04-12 00:26:55', '2023-04-12 02:25:43', 5, 10),
+(1, '2023-04-12 00:26:55', '2023-04-12 02:25:43', 5, 9),
 (2, '2023-04-12 00:27:11', '2023-04-12 02:25:43', 2, 4),
 (3, '2023-05-05 03:56:25', '2023-05-31 10:59:00', 3, 7),
-(4, '2023-05-05 20:01:07', '2023-05-26 00:00:00', 1, 7),
-(5, '2023-05-05 23:24:58', '2023-05-24 10:10:00', 5, 10);
+(4, '2023-05-05 20:01:07', '2023-05-26 00:00:00', 1, 7);
 
 --
 -- Índices para tablas volcadas
@@ -334,7 +327,7 @@ ALTER TABLE `laboratorio`
 -- AUTO_INCREMENT de la tabla `prestamo`
 --
 ALTER TABLE `prestamo`
-  MODIFY `id_prestamo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_prestamo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `usuario`
