@@ -5,11 +5,18 @@
             <h4 class="modal-title" style="font-weight:bold;" id="exampleModalCenterTitle">Editar préstamos</h4>
           </div>
           <div class="modal-body" >
-            <form action="<?= base_url('modificar_prestamo/'.$prestamos['id_prestamo']); ?>" method="post">
-
+            <form onsubmit="return validateHora()" action="<?= base_url('modificar_prestamo/'.$prestamos['id_prestamo']); ?>"  method="post">
+            <div class="form-floating">
+                <label class="col-sm-5  col-form-label">fecha del préstamo</label>
+                <input type="date" class="form-control form-control-user" id="EpresFecha" name="EpresFecha"  value="<?php echo $prestamos['fecha_prestamo'];?>" required>
+            </div>
+            <div class="form-floating">
+                <label class="col-sm-5  col-form-label">Hora de inicio</label>
+                <input type="time" class="form-control form-control-user" id="EpresHoraInicio" name="EpresHoraInicio"  value="<?php echo $prestamos['hora_inicio_prestamo'];?>" required>
+            </div>
             <div class="form-floating">
                 <label class="col-sm-5  col-form-label">Hora de fin</label>
-                <input type="text" class="form-control form-control-user" id="EpresHoraFin" name="EpresHoraFin"  value="<?php echo $prestamos['hora_fin_prestamo'];?>" required>
+                <input type="time" class="form-control form-control-user" id="EpresHoraFin" name="EpresHoraFin"  value="<?php echo $prestamos['hora_fin_prestamo'];?>" required>
             </div>
             <div class="form-floating">
                 <label class="col-sm-5  col-form-label">Observación</label>
@@ -62,3 +69,4 @@
       </div>
     </div>
     
+

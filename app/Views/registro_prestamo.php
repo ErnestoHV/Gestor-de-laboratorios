@@ -83,8 +83,8 @@ $user = session();
 <?php
 if($user->get('nombre_usuario') != "" ):
 ?>
-<body>
-  <div class="bg-primary" style= "height: 1000px; width: 100%">
+<body class="bg-primary" style= "height: 100%; width: 100%">
+  <div >
   <nav  style="background-color:black;" class="hunix-login">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -115,13 +115,21 @@ if($user->get('nombre_usuario') != "" ):
       <form class="w3-container w3-card-4" action="<?= base_url('guardar_prestamo'); ?>" onsubmit="return validateHora()" method="post">
     <div class="login-box-body">
     <div class="form-group">
+    <div class="form-group">
+            <label class="col-sm-5 col-form-label ">fecha del préstamo</label>
+            <input type="date" class="form form-control-user" name="presFecha" id="presFecha" required>
+        </div><br>
+    <div class="form-group">
+            <label class="col-sm-5 col-form-label ">Hora de inicio del préstamo</label>
+            <input type="time" class="form form-control-user" name="presHoraInicio" id="presHoraInicio" required>
+        </div><br>
         <div class="form-group">
             <label class="col-sm-5 col-form-label ">Hora de fin del préstamo</label>
             <input type="time" class="form form-control-user" name="presHoraFin" id="presHoraFin" required>
         </div><br>
         <div class="form-group">
             <label class="col-sm-5 col-form-label ">Observación de laboratorio</label>
-            <input type="text" class="form form-control-user" name="presObservacion" required>
+            <input type="text" class="form form-control-user" name="presObservacion" >
         </div><br>
         <div class="form-group">
             <label class="col-sm-5 col-form-label " for="inputPassword3" >Laboratorio</label>
@@ -172,38 +180,86 @@ if($user->get('nombre_usuario') != "" ):
         <script>
 
 		function validateHora() {
-            var hora = document.getElementById("presHoraFin").value;
-            var fecha = new Date();
-            fecha.setHours(hora.substr(0, 2), hora.substr(3, 2), 0, 0);
+            
+var inputFecha = document.getElementById('presFecha').value;
+var fecha = new Date(inputFecha);
+var diaSemana = fecha.getDay();
 
-            var horaMaxima = new Date();
-            horaMaxima.setHours(15, 0, 0, 0);
-            var horaMinima = new Date();
-            horaMinima.setHours(9, 0, 0, 0);
+var horaI = document.getElementById("presHoraInicio").value;
 
-            if (fecha > horaMaxima) {
-                // La hora sobrepasa la hora máxima permitida
-                var mensaje = "La hora máxima de fin de préstamo es a las 15:00 hrs";
-			        var alerta = document.createElement("div");
-			        alerta.className = "alerta";
-			        alerta.innerHTML = mensaje;
-			        document.getElementById("alerta_hrs").appendChild(alerta);
-				return false;
-            } else {
-                if(fecha < horaMinima){
-                    // La hora sobrepasa la hora minima permitida
-                    var mensaje = "La hora mínima  de fin de préstamo es a las 9:00 hrs";
-			        var alerta = document.createElement("div");
-			        alerta.className = "alerta";
-			        alerta.innerHTML = mensaje;
-			        document.getElementById("alerta_hrs").appendChild(alerta);
-				return false;
-                }else{
-                    // La hora es válida
-                    return true;
+var fechaI = new Date();
+fechaI.setHours(horaI.substr(0,2), horaI.substr(3,2),0,0);
+
+var horaMaximaI = new Date();
+horaMaximaI.setHours(14, 0, 0, 0);
+var horaMinimaI = new Date();
+horaMinimaI.setHours(8, 0, 0, 0);
+
+var horaF = document.getElementById("presHoraFin").value;
+
+var fechaF = new Date();
+fechaF.setHours(horaF.substr(0, 2), horaF.substr(3, 2), 0, 0);
+
+var horaMaximaF = new Date();
+horaMaximaF.setHours(15, 0, 0, 0);
+var horaMinimaF = new Date();
+horaMinimaF.setHours(9, 0, 0, 0);
+
+                if (diaSemana == 6 || diaSemana == 5) {
+                    var mensaje = "No es posible hacer préstamos en fines de semana";
+			            var alerta = document.createElement("div");
+			            alerta.className = "alerta";
+			            alerta.innerHTML = mensaje;
+			            document.getElementById("alerta_hrs").appendChild(alerta);
+				    return false;
                 }
 
-            }
+
+
+                if (fechaI > horaMaximaI) {
+                    // La hora sobrepasa la hora máxima permitida
+                    var mensaje = "La hora máxima para iniciar un préstamo es a las 14:00 hrs";
+                        var alerta = document.createElement("div");
+                        alerta.className = "alerta";
+                        alerta.innerHTML = mensaje;
+                        document.getElementById("alerta_hrs").appendChild(alerta);
+                    return false;
+                } 
+                
+                if(fechaI < horaMinimaI){
+                        // La hora sobrepasa la hora minima permitida
+                        var mensaje = "La hora mínima para iniciar un préstamo es a las 8:00 hrs";
+                        var alerta = document.createElement("div");
+                        alerta.className = "alerta";
+                        alerta.innerHTML = mensaje;
+                        document.getElementById("alerta_hrs").appendChild(alerta);
+                    return false;
+                    }else{
+                        if (fechaF > horaMaximaF) {
+                    // La hora sobrepasa la hora máxima permitida
+                    var mensaje = "La hora máxima de fin de préstamo es a las 15:00 hrs";
+                        var alerta = document.createElement("div");
+                        alerta.className = "alerta";
+                        alerta.innerHTML = mensaje;
+                        document.getElementById("alerta_hrs").appendChild(alerta);
+                    return false;
+                } else {
+                    if(fechaF < horaMinimaF){
+                        // La hora sobrepasa la hora minima permitida
+                        var mensaje = "La hora mínima  de fin de préstamo es a las 9:00 hrs";
+                        var alerta = document.createElement("div");
+                        alerta.className = "alerta";
+                        alerta.innerHTML = mensaje;
+                        document.getElementById("alerta_hrs").appendChild(alerta);
+                    return false;
+                    }else{
+                        // La hora es válida
+                        return true;
+                    }
+
+                }
+                    }
+
         }
         
 	</script>

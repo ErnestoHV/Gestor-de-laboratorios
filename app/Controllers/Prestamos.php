@@ -40,6 +40,8 @@ class Prestamos extends Controller{
         $equipo = $this->request->getPost('presIdEquipo');
         if($equipo != 0){
             $datos=[
+                'fecha_prestamo' =>$this->request->getPost('presFecha'),
+                'hora_inicio_prestamo' =>$this->request->getPost('presHoraInicio'),
                 'hora_fin_prestamo' =>$this->request->getPost('presHoraFin'),
                 'observacion_prestamo' =>$this->request->getPost('presObservacion'),
                 'id_laboratorio' =>$this->request->getPost('presIdLaboratorio'),
@@ -48,6 +50,8 @@ class Prestamos extends Controller{
                 ];
         }else{
             $datos=[
+                'fecha_prestamo' =>$this->request->getPost('presFecha'),
+                'hora_inicio_prestamo' =>$this->request->getPost('presHoraInicio'),
                 'hora_fin_prestamo' =>$this->request->getPost('presHoraFin'),
                 'observacion_prestamo' =>$this->request->getPost('presObservacion'),
                 'id_laboratorio' =>$this->request->getPost('presIdLaboratorio'),
@@ -84,8 +88,8 @@ class Prestamos extends Controller{
     public function modificar($id){
         $user =new PrestamoModel();
         $datos=[
-        'fecha_prestamo' =>$this->request->getPost('fecha'),
-        'hora_inicio_prestamo' =>$this->request->getPost('EpresHoraIn'),
+        'fecha_prestamo' =>$this->request->getPost('EpresFecha'),
+        'hora_inicio_prestamo' =>$this->request->getPost('EpresHoraInicio'),
         'hora_fin_prestamo' =>$this->request->getPost('EpresHoraFin'),
         'observacion_prestamo' =>$this->request->getPost('EpresObservacion'),
         'id_laboratorio' =>$this->request->getPost('EpresIdLaboratorio'),

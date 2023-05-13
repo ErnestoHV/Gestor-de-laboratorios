@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 class PrestamoModel extends Model{
     protected $table      = 'prestamo';
     protected $primaryKey = 'id_prestamo';
-    protected $allowedFields = ['fecha_prestamo','hora_fin_prestamo','observacion_prestamo','id_laboratorio','id_usuario','id_equipo',];
+    protected $allowedFields = ['fecha_prestamo', 'hora_inicio_prestamo', 'hora_fin_prestamo','observacion_prestamo','id_laboratorio','id_usuario','id_equipo',];
     // Uncomment below if you want add primary key
     // protected $primaryKey = 'id';
 
@@ -25,7 +25,7 @@ class PrestamoModel extends Model{
         $session = session();
         $matri = $session->get("matricula");
         $builder = $this->db->table('prestamo');
-        $builder->select('prestamo.*, equipo.nombre_equipo, usuario.matricula, laboratorio.nombre_laboratorio, fecha_prestamo, hora_fin_prestamo, observacion_prestamo');
+        $builder->select('prestamo.*, equipo.nombre_equipo, usuario.matricula, laboratorio.nombre_laboratorio, fecha_prestamo, hora_fin_prestamo, hora_inicio_prestamo, observacion_prestamo');
         $builder->join('equipo', 'prestamo.id_equipo = equipo.id_equipo');
         $builder->join('laboratorio', 'prestamo.id_laboratorio = laboratorio.id_laboratorio');
         $builder->join('usuario', 'prestamo.id_usuario = usuario.id_usuario');

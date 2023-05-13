@@ -213,6 +213,7 @@ if($user->get('rol')==2 || $user->get('rol')== 3):
       <th style="text-align: center;">#</th>
       <th style="text-align: center;">Fecha de préstamos</th>
       <th style="text-align: center;">Hora de fin</th>
+      <th style="text-align: center;">Hora de inicio</th>
       <th style="text-align: center;">Laboratorio</th>
       <th style="text-align: center;">Equipo</th>
       <th style="text-align: center;">Observaciones</th>
@@ -229,6 +230,7 @@ if($user->get('rol')==2 || $user->get('rol')== 3):
       <tr>
         <td><?= $contador?></td>
         <td><?= $prestamos  ->fecha_prestamo;?></td>
+        <td><?= $prestamos  ->hora_inicio_prestamo;?></td>
         <td><?= $prestamos  ->hora_fin_prestamo;?></td>
         <td><?= $prestamos  ->nombre_laboratorio;?></td>
         <td><?= $prestamos  ->nombre_equipo ?? "N/A";?></td>
