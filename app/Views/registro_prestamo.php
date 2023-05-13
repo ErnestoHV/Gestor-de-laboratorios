@@ -116,7 +116,7 @@ if($user->get('nombre_usuario') != "" ):
     <div class="login-box-body">
     <div class="form-group">
     <div class="form-group">
-            <label class="col-sm-5 col-form-label ">fecha del préstamo</label>
+            <label class="col-sm-5 col-form-label ">Fecha del préstamo</label>
             <input type="date" class="form form-control-user" name="presFecha" id="presFecha" required>
         </div><br>
     <div class="form-group">
@@ -128,7 +128,7 @@ if($user->get('nombre_usuario') != "" ):
             <input type="time" class="form form-control-user" name="presHoraFin" id="presHoraFin" required>
         </div><br>
         <div class="form-group">
-            <label class="col-sm-5 col-form-label ">Observación de laboratorio</label>
+            <label class="col-sm-5 col-form-label ">Observación en el laboratorio</label>
             <input type="text" class="form form-control-user" name="presObservacion" >
         </div><br>
         <div class="form-group">
@@ -154,9 +154,6 @@ if($user->get('nombre_usuario') != "" ):
             </select>
         </div><br>
         <div class="form-group">
-            <!-- <label class="col-sm-5 col-form-label " for="inputPassword3" >Equipo (opcional)</label>
-            <select class="form-control selct2" type="number" name="presIdEquipo" >
-            <option value=0>Ninguno</option> -->
             <label class="col-sm-5 col-form-label " for="inputPassword3" >Equipo</label>
             <select class="form-control selct2" type="number" name="presIdEquipo" >
                 <?php foreach ($equipo as $equipos){

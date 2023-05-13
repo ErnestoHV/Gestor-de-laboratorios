@@ -68,6 +68,37 @@
     <link href="../css/style.css" rel="stylesheet">
 </head>
 <body class="bg-primary" style= "height: auto; width: 100%">
+<style>
+        #login {
+            border-radius: 20px;
+            color:white;
+            background-color: #0063c2  ;
+            width: 100px; 
+            height: 50px;
+            font-weight:bold;
+            margin-bottom:10%;
+        }
+        #login:hover{
+            border: 2px solid blue; 
+            color: blue; 
+            background-color:white;
+            border-radius: 20px;
+        }
+        .password-container {
+            position: relative;
+        }
+
+        #toggle-password {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-25%);
+            cursor: pointer;
+            color:black; 
+            weight:100%; 
+            height:100%;
+        }
+    </style>
 <div>
     <nav  style="background-color:black;" class="hunix-login">
       <div class="container-fluid">
@@ -90,6 +121,11 @@
         <div class="login-logo">
             <b>Bienvenido</b>
         </div>  
+
+        <div id="alerta_pass" style="display: flex; background-color: orange; flex-direction: column; font-weight: bold; align-items: center;">
+
+</div>
+
         <!-- /.login-logo -->
         <div class="login-form">
             <h2 class="login-box-msg">Iniciar Sesión</h2>
@@ -100,21 +136,22 @@
                        <?= session()->getFlashdata('msg') ?>
                     </div>
                 <?php endif;?>
-
             <!-- end display error message -->
     
-            <form  class="user" method="POST" action="<?php echo base_url(); ?>/SigninController/loginAuth">
+            <form  class="user" method="POST" onsubmit="return validarLogin()" action="<?php echo base_url(); ?>/SigninController/loginAuth">
                 <div class="text-danger">
                 </div>
                 <div class="form-group">
                 <label for="username">Ingresa tu matrícula/ID</label>
-                    <input type="text" name="username" id="username" class="form-control" placeholder="Matrícula de alumno/ID de trabajador" required>
+                    <input type="text" name="username" id="username" class="form-control" style="font-size:13px" placeholder="Matrícula de alumno/ID de trabajador" >
                     
                 </div>
                 <div class="form-group">
                 <label for="password">Contraseña</label>
-                    <input type="password" name="uPassword" id="uPassword" class="form-control" placeholder="Contraseña" required>
-                    
+                    <div class="password-container">
+                        <input type="password" name="uPassword" id="uPassword" class="form-control" style="font-size:13px" placeholder="Contraseña">
+                        <i class="ti-eye" id="toggle-password"></i> 
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-8">
@@ -123,9 +160,7 @@
                     </div>
 
                     <div class="col-xxl-4">
-    <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30" name="login">Ingresar</button>
-    
-    
+                        <button type="submit"  id="login">Ingresar</button>
                     </div>
                 </div>
             </form>
@@ -138,6 +173,32 @@
     
 </div>
 
+<script>
+    //FUNCIÓN PARA MOSTRAR CONTRASEÑA
+    const togglePassword = document.querySelector('#toggle-password');
+    const passwordField = document.querySelector('#uPassword');
+
+    togglePassword.addEventListener('click', function() {
+        const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+        passwordField.setAttribute('type', type);
+    })
+
+
+    function validarLogin() {
+    var input_mat = document.getElementById("username").value;
+    var contraseña = document.getElementById("uPassword").value;
+
+    if(input_mat == "" || contraseña == ""){
+        var mensaje = "Por favor rellene todos los campos";
+			    var alerta = document.createElement("div");
+			    alerta.className = "alerta";
+			    alerta.innerHTML = mensaje;
+			    document.getElementById("alerta_pass").appendChild(alerta);
+				    return false;
+    }
+    }
+</script>
+
 <script src="../js/jquery.min.js"></script>
     <script src="../js/jquery-2.2.3.min.js"></script>
     <!-- jQuery 2.2.3 -->
@@ -149,5 +210,7 @@
     <script src="../js/validar.js"></script>
     <script src="../js/validar.js"></script>
     <script src="../js/usuarios.js"></script>
+
+
 </body>
 </html>

@@ -104,7 +104,7 @@ if($user->get('nombre_usuario') != ""):
   <div class="login-box">
       
       <div class="login-logo" style="color: white;">
-          <b>Registrar nuevo usuario</b>
+          <b>Registrarse en una capacitación</b>
       </div>
 
 
@@ -115,7 +115,7 @@ if($user->get('nombre_usuario') != ""):
     <div class="login-box-body">
     <div class="form-group">
         <div class="form-group">
-            <label class="col-sm-5 col-form-label ">fecha de fin de la capacitación</label>
+            <label class="col-sm-5 col-form-label ">Fecha y hora de finalización</label>
             <input type="datetime-local" class="form form-control-user" name="datetime-local" required>
         </div><br>
 

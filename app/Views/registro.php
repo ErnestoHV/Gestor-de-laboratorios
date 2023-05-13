@@ -71,6 +71,42 @@
     
 </head>
 <body class="bg-info" style= "height: 1000px; width: 100%">
+<style>
+		.alerta {
+			background-color: #f2dede;
+			color: #a94442;
+			border: 2px solid #ebccd1;
+            width: auto;
+			padding: 10px;
+			margin-bottom: 10px;
+			border-radius: 5px;
+
+		}
+        #login {
+            border-radius: 5px;
+            color:white;
+            font-weight:bold;
+        }
+        #login:hover{
+            color: black; 
+        }
+        #registrar {
+            border-radius: 20px;
+            color:white;
+            background-color: green  ;
+            width: 75px; 
+            height: 40px;
+            font-size: 13px;
+            font-weight:bold;
+            margin-bottom:10%;
+        }
+        #registrar:hover{
+            border: 2px solid green; 
+            color: green; 
+            background-color:white;
+            border-radius: 20px;
+        }
+    </style>
   <div>
   <nav  style="background-color:black;" class="hunix-login">
     <div class="container-fluid">
@@ -82,7 +118,7 @@
   
     <div>
       <ul class="nav navbar-nav navbar-right ">
-        <li><a style="text-align: center" href="<?= base_url('login'); ?>" class="text-light text-bold"><i class="fa-solid fa-right-to-bracket"></i> Iniciar sesión </a></li>
+        <li><a style="text-align: center" id="login" href="<?= base_url('login'); ?>"><i class="fa-solid fa-right-to-bracket"></i> Iniciar sesión </a></li>
       </ul>
     </div>
   </nav>
@@ -127,32 +163,31 @@
         </div><br>
        <div class="form-group">
          <br><label class="col-sm-5 col-form-label ">Contraseña</label>
-         <input type="password"  class="form form-control-user" name="pass" id="pass" required>
+            <input type="password"  class="form form-control-user" name="pass" id="pass" required>
       </div>
         <div class="form-group">
             <label class="col-sm-5 col-form-label " for="inputPassword3" >Carrera</label>
-            <select class="form-control selct2" type="number" name="carrera" required>
+            <select class="form-control selct2" type="number" name="carrera" style="font-size:13px" required>
                 <?php foreach ($carrera as $carreras){
                 echo '<option value="'.$carreras['id_carrera'].'">'.$carreras['nombre_carrera'].'</option>';}; ?>
             </select>
         </div>
         <div class="form-group"> 
             <label for="inputPassword3" class="col-sm-5 col-form-label " type="number">Rol</label>
-            <select class="form-control select2" name="rol" required>
+            <select class="form-control select2" name="rol" style="font-size:13px" required>
                 <option value=3>Alumno</option>
             </select>
         </div>
-        <input type="submit" class="btn btn-success btn-lg" value="Registrar">
+        <input type="submit" id="registrar" value="Registrar">
     </form>
 
     <script>
-
 		function validateForm() {
             
 			var input_mat = document.getElementById("mat").value;
             var contrasena = document.getElementById("pass").value;
 			// Comprobar si la contraseña cumple con los requisitos
-			var expresionRegular = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+			var expresionRegular = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,20}$/;
             let expresion = /^[a-zA-Z0-9]*$/;
 			if (!expresionRegular.test(contrasena)) {
                 var mensaje = "La contraseña debe tener al menos 8 caracteres, una letra mayúscula y un número y no contener caracteres especiales";
@@ -174,18 +209,7 @@
         
         
 	</script>
-    <style>
-		.alerta {
-			background-color: #f2dede;
-			color: #a94442;
-			border: 2px solid #ebccd1;
-            width: auto;
-			padding: 10px;
-			margin-bottom: 10px;
-			border-radius: 5px;
-
-		}
-	</style>
+    
     <script src="../js/jquery.min.js"></script>
     <script src="../js/jquery-2.2.3.min.js"></script>
     <!-- jQuery 2.2.3 -->
