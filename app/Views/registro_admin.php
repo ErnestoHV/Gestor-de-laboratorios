@@ -243,7 +243,7 @@ if($user->get('nombre_usuario') != "" && $user->get('rol')==0 || $user->get('rol
         </div><br>
        <div class="form-group">
          <br><label class="col-sm-5 col-form-label ">Contraseña</label>
-         <input type="password" minlength="8" maxlength="10" class="form form-control-user" name="pass" required>
+         <input type="password" class="form form-control-user" name="pass" required>
        </div>
         <div class="form-group">
             <label class="col-sm-5 col-form-label " for="inputPassword3" >Carrera</label>
