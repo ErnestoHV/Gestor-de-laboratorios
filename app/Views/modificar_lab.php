@@ -11,7 +11,7 @@
                 <input type="text" class="form-control form-control-user" id="nom" name="nom"  value="<?php echo $laboratorios['nombre_laboratorio'];?>" required>
             </div>
             <div class="form-floating">
-                <label class="col-sm-5  col-form-label">Ubicacion</label>
+                <label class="col-sm-5  col-form-label">Ubicación</label>
                 <input type="text" class="form-control form-control-user"id="EingUbicacion" name="EingUbicacion"  value="<?php echo $laboratorios['ubicacion_laboratorio'];?>" required>
             </div>
             <div class="form-floating">
@@ -19,7 +19,7 @@
                 <input type="text" class="form-control form-control-user" id="EingResponsable" name="EingResponsable"  value="<?php echo $laboratorios['nombre_responsable'];?>" required>
             </div>
             <div class="form-floating">
-                <label class="col-sm-5  col-form-label">Observacion</label>
+                <label class="col-sm-5  col-form-label">Observación</label>
                 <input type="text" class="form-control form-control-user" id="EingObservacion" name="EingObservacion"  value="<?php echo $laboratorios['observacion_laboratorio'];?>" required>
             </div>
             <div class="form-floating">

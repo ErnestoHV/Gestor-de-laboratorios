@@ -204,7 +204,7 @@ if($user->get('nombre_usuario') != "" && $user->get('rol')==0 || $user->get('rol
                         
   <div class="login-box" style="background-color:  #05407f  ">
   <div class="login-logo">
-          <b style="color: white ">Registrate aquí</b>
+          <b style="color: white ">Regístrate aquí</b>
       </div>
       
 
@@ -218,7 +218,7 @@ if($user->get('nombre_usuario') != "" && $user->get('rol')==0 || $user->get('rol
     <div class="login-box-body">
     <div class="form-group">
         <div class="form-group">
-            <label class="col-sm-5 col-form-label ">Matricula/ID</label>
+            <label class="col-sm-5 col-form-label ">Matrícula/ID</label>
             <input type="text" class="form form-control-user text-dark" name="mat" required>
         </div>
         <div class="form-group">
@@ -238,7 +238,7 @@ if($user->get('nombre_usuario') != "" && $user->get('rol')==0 || $user->get('rol
             <input type="telefono" class="form form-control-user" name="tel" required>
         </div>
         <div class="form-group">
-            <label class="col-sm-5 col-form-label ">Numero de Seguridad Social (NSS)</label>
+            <label class="col-sm-5 col-form-label ">Número de Seguridad Social (NSS)</label>
             <input type="text" class="form form-control-user"  name="nss">
         </div><br>
        <div class="form-group">

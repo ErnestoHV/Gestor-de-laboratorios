@@ -233,9 +233,9 @@ if($user->get('nombre_usuario') != "" && $user->get('rol')==0 || $user->get('rol
        <th>Marca</th>
        <th>Modelo</th>
        <th>Tipo</th>
-       <th>Descripcion</th>
+       <th>Descripción</th>
        <th>Nivel de riesgo</th>
-       <th>id laboratorio</th>
+       <th>ID. laboratorio</th>
        <th>Modificar</th>
        <th>Eliminar</th>
         </tr>

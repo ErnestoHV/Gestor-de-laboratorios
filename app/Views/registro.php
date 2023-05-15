@@ -126,7 +126,7 @@
   <div class="login-box">
       
       <div class="login-logo">
-          <b>Registrate aquí</b>
+          <b>Regístrate aquí</b>
       </div>
       <?php if (session()->has('success')): ?>
   <div class="alert alert-warning" style="text-align: center;"><?= session('success') ?></div>

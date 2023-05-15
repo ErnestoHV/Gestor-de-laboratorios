@@ -51,13 +51,15 @@ $matricula=$user->where('matricula',$datos['matricula'])->findAll();
 $nombre=$user->where('nombre_usuario',$datos['nombre_usuario'])->findAll();
     if($matricula){
         $session->setFlashdata('success', 'La matricula/ID ya existe en la base de datos.');
-        return redirect()->to(base_url('registro'));
-    }else{
-        if($nombre){
-            $session->setFlashdata('success', 'El usuario ya existe en la base de datos.');
+        if($session->get('rol') == "" || $session->get('rol') == 2 || $session->get('rol') == 3 ){
             return redirect()->to(base_url('registro'));
+        }else{
+            if( $session->get('rol') == 0 || $session->get('rol') == 1 ){
+                return redirect()->to(base_url('registro_admin'));
+            }
         }
     }
+    
     $respuesta=$user->insert($datos);
     $session->setFlashdata('success', 'El usuario ha sido creado con éxito.');
     if($session->get('rol') == "" || $session->get('rol') == 2 || $session->get('rol') == 3 ){
