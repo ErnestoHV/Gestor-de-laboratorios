@@ -1,0 +1,2 @@
+Hola Diego, soy Ernesto Hernández. Este es un archivo de texto de prueba que subiré a tu repositorio.
+Si puedes verlo, significa que pude conectarme al repositorio.
