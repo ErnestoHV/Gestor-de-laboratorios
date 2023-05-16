@@ -1,5 +1,0 @@
-Hola Diego, soy Ernesto Hernández. Este es un archivo de texto de prueba que subiré a tu repositorio.
-Si puedes verlo, significa que pude conectarme al repositorio.
-
-De momento, solo lo puedo enviar a una rama externa, nada de mandar este archivo a la rama principal.
-Por ello, por favor te pido que me des los permisos para que también pueda editar sobre la rama principal.
